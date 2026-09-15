@@ -1,0 +1,47 @@
+/* Three newspaper columns */
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #dddddd;
+    padding: 20px;
+}
+
+.news {
+    background-color: white;
+    padding: 25px;
+    column-count: 3;
+    column-gap: 30px;
+}
+
+.news h1 {
+    column-span: all;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+article {
+    text-align: justify;
+}
+
+article img {
+    width: 180px;
+    float: left;
+    margin: 0 15px 10px 0;
+}
+
+article p {
+    line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+    .news {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 500px) {
+    .news {
+        column-count: 1;
+    }
+}

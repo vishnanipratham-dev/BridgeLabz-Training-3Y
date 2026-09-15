@@ -1,0 +1,83 @@
+/* Basic portfolio styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #eeeeee;
+    color: #222222;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 1em;
+}
+
+main {
+    margin-top: 80px;
+    min-height: 75vh;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.bio, .photo {
+    width: 50%;
+}
+
+.bio h2 {
+    font-size: 2rem;
+}
+
+.bio p {
+    font-size: 1.1em;
+}
+
+.photo img {
+    width: 70%;
+    max-width: 300px;
+}
+
+footer {
+    min-height: 15vh;
+    padding: 20px;
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bio, .photo {
+        width: 100%;
+    }
+}

@@ -1,0 +1,58 @@
+/* Gallery uses a simple grid */
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px gray;
+}
+
+.photo img {
+    width: 100%;
+    display: block;
+    transition: 0.3s;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+.photo span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    opacity: 0;
+}
+
+.photo:hover span {
+    opacity: 1;
+}
+
+@media (max-width: 800px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,55 @@
+/* Center the form using flexbox */
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #dff0ff;
+    color: #222222;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 400px;
+    max-width: 90%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px gray;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #cccccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid blue;
+    outline: none;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #333333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

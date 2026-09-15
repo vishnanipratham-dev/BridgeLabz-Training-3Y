@@ -1,0 +1,44 @@
+/* Card layout using the box model */
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #eeeeee;
+}
+
+header {
+    padding: 20px;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    width: 33%;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #333333;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px gray;
+    background-color: white;
+}
+
+.lead {
+    background-color: #ffe680;
+    border: 3px solid orange;
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+    }
+}

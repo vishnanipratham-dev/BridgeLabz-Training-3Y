@@ -1,0 +1,71 @@
+/* Sidebar and content are arranged using flexbox */
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #eeeeee;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 65px;
+    padding: 10px;
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.layout {
+    display: flex;
+    margin-top: 85px;
+}
+
+aside {
+    width: 220px;
+    min-height: calc(100vh - 85px);
+    padding: 20px;
+    background-color: #444444;
+}
+
+aside a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+.box {
+    width: 50%;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 2px 2px 8px gray;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    aside {
+        width: auto;
+        min-height: auto;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .box {
+        width: auto;
+    }
+}
