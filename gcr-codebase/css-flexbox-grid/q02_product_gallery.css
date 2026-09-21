@@ -1,0 +1,7 @@
+/* Four columns on desktop */
+body{margin:0;font-family:Arial;background:#eee;text-align:center;}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:30px;}
+.card{min-height:150px;padding:20px;background:white;border:1px solid gray;border-radius:10px;transition:0.3s;}
+.card:hover{transform:scale(1.05);background:#dff0ff;}
+@media(max-width:900px){.products{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:600px){.products{grid-template-columns:1fr;}}

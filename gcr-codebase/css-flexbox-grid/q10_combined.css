@@ -1,0 +1,13 @@
+/* Grid creates two main columns and Flexbox creates three boxes */
+body{margin:0;font-family:Arial;background:#eee;}
+.page{display:grid;grid-template-areas:"header" "main" "footer";}
+header{grid-area:header;padding:20px;background:#333;color:white;display:flex;justify-content:space-between;align-items:center;}
+nav a{color:white;text-decoration:none;margin:10px;}
+main{grid-area:main;display:grid;grid-template-columns:2fr 1fr;gap:20px;padding:30px;}
+article,aside{background:white;padding:25px;}
+.boxes{display:flex;gap:15px;}
+.boxes div{flex:1;padding:20px;background:#dff0ff;}
+.title{animation:moveUp 1s;}
+footer{grid-area:footer;padding:20px;background:#333;color:white;text-align:center;}
+@keyframes moveUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+@media(max-width:700px){main{grid-template-columns:1fr;}header{flex-direction:column;}.boxes{flex-direction:column;}}

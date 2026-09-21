@@ -1,0 +1,9 @@
+/* Perspective and 3D create the flip */
+body{margin:0;font-family:Arial;}
+main{height:100vh;display:flex;justify-content:center;align-items:center;background:#eee;}
+.card{width:300px;height:350px;perspective:1000px;}
+.card-inner{width:100%;height:100%;position:relative;transition:transform 0.6s;transform-style:preserve-3d;}
+.card:hover .card-inner{transform:rotateY(180deg);}
+.front,.back{position:absolute;width:100%;height:100%;backface-visibility:hidden;text-align:center;background:white;border:2px solid #333;}
+.front img{width:90%;}
+.back{transform:rotateY(180deg);box-sizing:border-box;padding:50px 20px;}

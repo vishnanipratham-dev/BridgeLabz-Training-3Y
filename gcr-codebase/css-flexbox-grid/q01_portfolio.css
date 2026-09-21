@@ -1,0 +1,9 @@
+/* Flexbox is used for horizontal alignment */
+body{margin:0;font-family:Arial;}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px;background:#333;color:white;}
+nav a{color:white;text-decoration:none;margin:10px;}
+main{min-height:70vh;display:flex;justify-content:center;align-items:center;gap:50px;padding:30px;}
+main section{width:40%;text-align:center;}
+main img{width:300px;max-width:100%;}
+footer{padding:20px;text-align:center;background:#333;color:white;}
+@media(max-width:700px){header,main{flex-direction:column;}main section{width:90%;}}

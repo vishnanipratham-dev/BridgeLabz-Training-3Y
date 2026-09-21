@@ -1,0 +1,9 @@
+/* Flexbox aligns pricing cards */
+body{margin:0;font-family:Arial;background:#eee;text-align:center;}
+main{display:flex;justify-content:center;align-items:stretch;gap:20px;padding:30px;}
+.plan{width:30%;padding:25px;background:white;border:2px solid gray;border-radius:10px;transition:0.3s;animation:fadeIn 1s;}
+.popular{background:#ffe680;transform:scale(1.05);}
+.plan:hover{transform:translateY(-10px);}
+.plan a{display:inline-block;padding:10px 20px;background:#333;color:white;text-decoration:none;}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+@media(max-width:750px){main{flex-direction:column;align-items:center;}.plan{width:80%;}}
