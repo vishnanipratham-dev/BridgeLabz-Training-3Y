@@ -1,0 +1,10 @@
+/* Different shadows create depth */
+body{margin:0;font-family:Arial;background:#eee;text-align:center;}
+h1{text-shadow:2px 2px 4px gray;}
+main{min-height:70vh;display:flex;justify-content:center;align-items:center;gap:30px;}
+.card{width:200px;padding:30px;background:white;border-radius:10px;transition:0.3s;}
+.first{box-shadow:2px 2px 5px gray;}
+.second{box-shadow:5px 5px 12px gray;}
+.third{box-shadow:0 0 15px gray;}
+.card:hover{transform:translateY(-10px);box-shadow:8px 8px 20px gray;}
+@media(max-width:700px){main{flex-direction:column;}}

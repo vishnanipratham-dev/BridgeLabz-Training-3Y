@@ -1,0 +1,9 @@
+/* Different width and height units */
+body{margin:0;font-family:Arial;background:#eee;}
+h1{text-align:center;}
+main{min-height:80vh;display:flex;justify-content:center;align-items:center;gap:20px;}
+.box{padding:20px;text-align:center;overflow:auto;}
+.one{width:180px;height:150px;background:lightblue;}
+.two{width:25%;height:200px;max-width:300px;background:lightgreen;}
+.three{width:15em;height:30vh;min-height:150px;background:lightcoral;}
+@media(max-width:700px){main{flex-direction:column;}.box{width:70%;}}

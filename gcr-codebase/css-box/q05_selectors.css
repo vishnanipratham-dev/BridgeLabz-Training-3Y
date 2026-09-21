@@ -1,0 +1,21 @@
+/* Attribute selector */
+input[type="text"]{border:3px solid blue;}
+/* Attribute selector with ^= */
+a[href^="https"]{color:green;}
+/* Pseudo-classes */
+a:hover{background:yellow;}
+input:focus{outline:2px solid red;}
+li:nth-child(2){color:blue;}
+/* Pseudo-elements */
+h1::before{content:"★ ";}
+h1::after{content:" ★";}
+/* Child combinator > */
+section>p{font-weight:bold;}
+/* Adjacent sibling + */
+p+span{color:red;}
+/* General sibling ~ */
+p~span{text-decoration:underline;}
+/* Descendant combinator */
+.links a{margin:10px;padding:5px;}
+body{font-family:Arial;padding:30px;}
+input{padding:10px;margin:10px;}

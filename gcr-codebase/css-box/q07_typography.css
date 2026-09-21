@@ -1,0 +1,12 @@
+/* Typography makes text readable */
+body{margin:0;background:#eee;}
+main{max-width:800px;margin:40px auto;padding:30px;background:white;}
+h1{font-family:Georgia;font-size:36px;text-align:center;}
+p{font-size:18px;line-height:1.7;letter-spacing:1px;text-align:justify;}
+.serif{font-family:Georgia;font-weight:normal;}
+.sans{font-family:Arial;font-weight:bold;}
+mark{background:yellow;color:red;}
+strong{color:blue;}
+em{color:green;}
+p::first-letter{font-size:30px;font-weight:bold;}
+p::first-line{font-weight:bold;}

@@ -1,0 +1,9 @@
+/* Nested boxes show margin, border, padding and content */
+body{margin:0;font-family:Arial;background:#eee;text-align:center;}
+main{min-height:70vh;display:flex;justify-content:center;align-items:center;gap:30px;flex-wrap:wrap;}
+.margin-layer{background:#f5deb3;padding:30px;}
+.border-layer{background:#f99;border:10px solid red;padding:20px;}
+.padding-layer{background:#9cf;padding:25px;}
+.content{background:white;padding:30px;}
+.box-default,.box-border{width:220px;padding:30px;border:10px solid blue;background:white;}
+.box-border{box-sizing:border-box;}

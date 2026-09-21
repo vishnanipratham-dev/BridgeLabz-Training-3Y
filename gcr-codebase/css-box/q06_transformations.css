@@ -1,0 +1,9 @@
+/* Transformations activate on hover */
+body{margin:0;font-family:Arial;text-align:center;background:#eee;}
+main{min-height:70vh;display:flex;justify-content:center;align-items:center;gap:40px;}
+.box{width:120px;height:120px;display:flex;justify-content:center;align-items:center;background:lightblue;transition:all 0.4s ease;}
+.rotate:hover{transform:rotate(20deg);}
+.scale:hover{transform:scale(1.2);}
+.translate:hover{transform:translate(20px,-20px);}
+.skew:hover{transform:skew(15deg);}
+@media(max-width:700px){main{flex-direction:column;}}
