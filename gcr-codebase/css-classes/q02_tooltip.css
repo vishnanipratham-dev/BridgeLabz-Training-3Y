@@ -1,0 +1,7 @@
+/* CSS-only tooltip */
+body { margin: 0; font-family: Arial; background: #eeeeee; text-align: center; }
+main { min-height: 70vh; display: flex; justify-content: center; align-items: center; gap: 60px; }
+.item { position: relative; padding: 20px; background: white; border-radius: 8px; }
+.tooltip { position: absolute; bottom: 100%; left: 50%; width: 180px; margin-left: -90px; padding: 10px; background: #333333; color: white; border-radius: 5px; opacity: 0; transition: 0.3s ease-in-out; }
+.item:hover .tooltip { opacity: 1; }
+@media (max-width: 600px) { main { flex-direction: column; } }

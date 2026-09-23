@@ -1,0 +1,7 @@
+/* Hover combines pseudo-class, transition, transform and shadow */
+body { margin: 0; font-family: Arial; background: #eeeeee; text-align: center; }
+main { min-height: 70vh; display: flex; justify-content: space-around; align-items: center; }
+button { padding: 15px 30px; border: none; border-radius: 8px; background: blue; color: white; box-shadow: 2px 2px 8px gray; transition: all 0.3s ease; }
+button:hover { background: green; transform: scale(1.1); box-shadow: 5px 5px 15px gray; }
+button:active { transform: scale(0.95); }
+@media (max-width: 700px) { main { flex-direction: column; gap: 20px; } }

@@ -1,0 +1,9 @@
+/* Card-like UI using Flexbox */
+body { margin: 0; font-family: Arial; background: linear-gradient(to right, #dff0ff, #ffffff); }
+main { min-height: 100vh; display: flex; justify-content: center; align-items: center; }
+.card { width: 350px; padding: 30px; background: white; border-radius: 12px; box-shadow: 2px 2px 12px gray; display: flex; flex-direction: column; gap: 15px; }
+input, select, button { padding: 12px; border-radius: 6px; border: 1px solid gray; }
+input:focus, select:focus { border-color: blue; outline: none; }
+button:hover { background: #333333; color: white; }
+.buttons { display: flex; gap: 10px; }
+.buttons button { flex: 1; }

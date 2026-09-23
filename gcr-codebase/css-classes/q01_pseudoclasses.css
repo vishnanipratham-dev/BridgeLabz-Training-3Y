@@ -1,0 +1,10 @@
+/* Pseudo-class examples */
+body { margin: 0; font-family: Arial; background: #eeeeee; text-align: center; }
+header, footer { padding: 20px; background: #333333; color: white; }
+main { min-height: 65vh; display: flex; justify-content: center; align-items: center; gap: 20px; padding: 30px; }
+.example { width: 190px; padding: 20px; background: white; border-radius: 10px; }
+a:hover { color: red; }
+button:active { background-color: orange; }
+input:focus { outline: 2px solid blue; background-color: #dff0ff; }
+li:nth-child(2) { color: green; font-weight: bold; }
+@media (max-width: 800px) { main { flex-direction: column; } }

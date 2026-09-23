@@ -1,0 +1,7 @@
+/* Both boxes use equal declared width and padding */
+body { margin: 0; font-family: Arial; background: #eeeeee; text-align: center; }
+main { min-height: 70vh; display: flex; justify-content: center; align-items: center; gap: 30px; }
+.box { width: 300px; padding: 30px; border: 10px solid black; }
+.default { background: lightblue; }
+.border { background: lightgreen; box-sizing: border-box; }
+@media (max-width: 700px) { main { flex-direction: column; } .box { width: 80%; } }

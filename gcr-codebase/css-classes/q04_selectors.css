@@ -1,0 +1,19 @@
+/* Element selector */
+p { color: #333333; }
+/* Class selector */
+.special { color: blue; }
+/* ID selector */
+#important { color: red; }
+/* Attribute selector */
+input[type="text"] { padding: 10px; border: 2px solid green; }
+/* Child combinator > */
+section > p { font-weight: bold; }
+/* Adjacent sibling + */
+p + span { color: red; }
+/* General sibling ~ */
+p ~ span { text-decoration: underline; }
+/* Descendant selector */
+main a { color: purple; }
+body { margin: 0; font-family: Arial; background: #eeeeee; }
+header, footer { padding: 20px; background: #333333; color: white; text-align: center; }
+main { padding: 30px; }

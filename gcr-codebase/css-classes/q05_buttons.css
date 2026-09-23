@@ -1,0 +1,11 @@
+/* Buttons are aligned with Flexbox */
+body { margin: 0; font-family: Arial; background: #eeeeee; text-align: center; }
+main { min-height: 70vh; display: flex; justify-content: center; align-items: center; gap: 20px; }
+button { padding: 12px 25px; border-radius: 8px; box-shadow: 2px 2px 5px gray; cursor: pointer; transition: 0.3s; }
+.primary { background: blue; color: white; border: 2px solid blue; }
+.secondary { background: green; color: white; border: 2px solid green; }
+.outline { background: white; color: blue; border: 2px solid blue; }
+button:hover { transform: scale(1.05); }
+button:active { transform: scale(0.95); }
+button:focus { outline: 3px solid orange; }
+button:disabled { background: gray; color: white; cursor: not-allowed; }
